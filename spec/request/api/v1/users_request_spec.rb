@@ -5,7 +5,7 @@ describe 'Users API', type: :request do
     it 'returns user by id' do
       role = Role.create(name: 'patient')
 
-      person = Person.create! fistName: Faker::Name.first_name,
+      person = Person.create! firstName: Faker::Name.first_name,
                               lastName: Faker::Name.last_name,
                               documentId: Faker::IDNumber.chilean_id,
                               phone: Faker::PhoneNumber.cell_phone_in_e164,
@@ -32,7 +32,7 @@ describe 'Users API', type: :request do
     it 'returns user by id' do
       role = Role.create(name: 'patient')
 
-      person = Person.create! fistName: Faker::Name.first_name,
+      person = Person.create! firstName: Faker::Name.first_name,
                               lastName: Faker::Name.last_name,
                               documentId: Faker::IDNumber.chilean_id,
                               phone: Faker::PhoneNumber.cell_phone_in_e164,
