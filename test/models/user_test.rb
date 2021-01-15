@@ -3,7 +3,7 @@ require "test_helper"
 class UserTest < ActiveSupport::TestCase
   test 'user with a valid email should be valid' do
     role = Role.first
-    person = Person.create! fistName: Faker::Name.first_name,
+    person = Person.create! firstName: Faker::Name.first_name,
                             lastName: Faker::Name.last_name,
                             documentId: Faker::IDNumber.chilean_id,
                             phone: Faker::PhoneNumber.cell_phone_in_e164,
@@ -16,7 +16,7 @@ class UserTest < ActiveSupport::TestCase
   end
   test 'user with duplicate email should be invalid' do
     role = Role.first
-    person = Person.create! fistName: Faker::Name.first_name,
+    person = Person.create! firstName: Faker::Name.first_name,
                             lastName: Faker::Name.last_name,
                             documentId: Faker::IDNumber.chilean_id,
                             phone: Faker::PhoneNumber.cell_phone_in_e164,
@@ -30,7 +30,7 @@ class UserTest < ActiveSupport::TestCase
   end
   test 'user with a invalid email should be invalid' do
     role = Role.first
-    person = Person.create! fistName: Faker::Name.first_name,
+    person = Person.create! firstName: Faker::Name.first_name,
                             lastName: Faker::Name.last_name,
                             documentId: Faker::IDNumber.chilean_id,
                             phone: Faker::PhoneNumber.cell_phone_in_e164,
