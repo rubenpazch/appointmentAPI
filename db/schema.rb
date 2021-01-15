@@ -10,10 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_15_024051) do
+ActiveRecord::Schema.define(version: 2021_01_15_030540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "doctor_calendars", force: :cascade do |t|
+    t.date "startDate"
+    t.date "endDate"
+    t.time "startTime"
+    t.time "endTime"
+    t.integer "totalHours"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "firstName"
+    t.string "lastName"
+    t.string "documentId"
+    t.string "phone"
+    t.string "historyNumber"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "roles", force: :cascade do |t|
     t.string "name"
@@ -27,8 +47,12 @@ ActiveRecord::Schema.define(version: 2021_01_15_024051) do
     t.string "username", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "role_id", null: false
+    t.integer "person_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["role_id"], name: "index_users_on_role_id"
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "users", "roles"
 end
