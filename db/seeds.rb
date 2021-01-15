@@ -24,6 +24,7 @@ department2 = Department.create! name: 'Medicine', contactNumber: Faker::PhoneNu
 department3 = Department.create! name: 'Cancer Care', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
 department4 = Department.create! name: 'Urology', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
 department5 = Department.create! name: 'Unknow', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
+department6 = Department.create! name: 'Administrator', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
 
 
 shift1 = Shift.create! totalShift: 32, interval: 15,  startDate: '2021-02-01 ', endDate: '2021-02-28 ', department_id: department1.id
@@ -36,7 +37,10 @@ shift5 = Shift.create! totalShift: 32, interval: 15,  startDate: '2021-02-01 ', 
 
 # Create Admin Data
 person = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
-User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role1.id, person_id: person.id, department_id: department5.id
+User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role1.id, person_id: person.id, department_id: department6.id
+
+person = Person.create! firstName: 'administrator', lastName: 'superuser', documentId: '32547698' , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+User.create! email: 'rubenpazchuspe@outlook.com', password: '1234567890', username: 'rpazchuspe', role_id: role1.id, person_id: person.id, department_id: department6.id
 
   
 # Create Doctors data
