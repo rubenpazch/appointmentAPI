@@ -1,8 +1,8 @@
 class User < ApplicationRecord
     belongs_to :role
-    #belongs_to :person
-    #has_many :doctor_calendar
-    #belongs_to :department
+    belongs_to :person
+    has_many :doctor_calendar
+    belongs_to :department
   
     validates :email, uniqueness: true
     validates_format_of :email, with: /@/
