@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_15_030943) do
+ActiveRecord::Schema.define(version: 2021_01_15_031330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2021_01_15_030943) do
   create_table "departments", force: :cascade do |t|
     t.string "name"
     t.string "contactNumber"
-    t.string "string"
     t.string "location"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -32,6 +31,7 @@ ActiveRecord::Schema.define(version: 2021_01_15_030943) do
     t.integer "totalHours"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "people", force: :cascade do |t|
@@ -50,6 +50,17 @@ ActiveRecord::Schema.define(version: 2021_01_15_030943) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "shifts", force: :cascade do |t|
+    t.integer "totalShift"
+    t.integer "interval"
+    t.date "startDate"
+    t.date "endDate"
+    t.bigint "department_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["department_id"], name: "index_shifts_on_department_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "password_digest", null: false
@@ -63,5 +74,6 @@ ActiveRecord::Schema.define(version: 2021_01_15_030943) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "shifts", "departments"
   add_foreign_key "users", "roles"
 end
