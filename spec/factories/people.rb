@@ -1,5 +1,9 @@
 FactoryBot.define do
   factory :person do
-    firstName { "MyString" }
+    fistName { 'MyString' }
+    lastName { 'MyString' }
+    documentId { 'MyString' }
+    phone { 'MyString' }
+    historyNumber { 'MyString' }
   end
 end
