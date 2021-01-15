@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_15_140517) do
+ActiveRecord::Schema.define(version: 2021_01_15_140633) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,6 +82,8 @@ ActiveRecord::Schema.define(version: 2021_01_15_140517) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "role_id", null: false
     t.integer "person_id"
+    t.bigint "department_id", null: false
+    t.index ["department_id"], name: "index_users_on_department_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["role_id"], name: "index_users_on_role_id"
     t.index ["username"], name: "index_users_on_username", unique: true
@@ -90,5 +92,6 @@ ActiveRecord::Schema.define(version: 2021_01_15_140517) do
   add_foreign_key "appointments", "users"
   add_foreign_key "appointments", "users", column: "doctor_id"
   add_foreign_key "shifts", "departments"
+  add_foreign_key "users", "departments"
   add_foreign_key "users", "roles"
 end
