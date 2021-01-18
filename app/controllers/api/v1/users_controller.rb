@@ -18,8 +18,10 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
-    if @user.save
+    puts @user
+    if @user.valid?
+      render json: @user.errors, status: :unprocessable_entity
+    elsif @user.save
       render json: UserSerializer.new(@user).serializable_hash, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity
@@ -54,9 +56,9 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def check_owner
-    if current_user.nil? 
-      head :forbidden 
-    else 
+    if current_user.nil?
+      head :forbidden
+    else
       head :forbidden unless params[:id].to_i == current_user&.id.to_i
     end
   end
