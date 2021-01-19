@@ -95,27 +95,27 @@ describe 'Users API', type: :request do
 
       User.create(email: 'test1@test.com',
                   password_digest: 'test2',
-                  username: 'testusename1',
+                  username: 'testusername1',
                   role_id: role.id,
                   department_id: department.id,
                   person_id: person.id)
 
       User.create(email: 'test2@test.com',
                   password_digest: 'test2',
-                  username: 'testusename2',
+                  username: 'testusername2',
                   role_id: role.id,
                   department_id: department.id,
                   person_id: person2.id)
     end
 
     it 'should create a new user' do
-      
       expect {
         post '/api/v1/users',
              params: {
                user: {
                  email: 'test7777@test.com',
                  password: 'test7777',
+                 password_digest: 'test7777',
                  username: 'test7777',
                  role_id: Role.first.id,
                  department_id: Department.first.id,
@@ -125,45 +125,38 @@ describe 'Users API', type: :request do
       }.to change { User.count }.from(2).to(3)
       expect(response).to have_http_status(:created)
     end
-    #    it 'should not create a new user with taken email' do
-    #      role = Role.create(name: 'admin')
-    #
-    #      FactoryBot.create(:user, email: 'test7777@test.com', password_digest: 'test7777', username: 'testXXXX',
-    #                               role_id: role.id)
-    #
-    #      post '/api/v1/users',
-    #           params: {
-    #             user: {
-    #               email: 'test7777@test.com',
-    #               password: 'test7777',
-    #               password_digest: 'test7777',
-    #               username: 'test7777',
-    #               role_id: role.id
-    #             }
-    #           }
-    #      expect(response).to have_http_status(:unprocessable_entity)
-    #    end
-    #
-    #    it 'should not create a new user with taken username' do
-    #      role = Role.create(name: 'admin')
-    #
-    #      FactoryBot.create(:user, email: 'test7777@test.com', password_digest: 'test7777', username: 'rpaz',
-    #                               role_id: role.id)
-    #
-    #      post '/api/v1/users',
-    #           params: {
-    #             user: {
-    #               email: 'testXXXX@test.com',
-    #               password: 'test7777',
-    #               password_digest: 'test7777',
-    #               username: 'rpaz',
-    #               role_id: role.id
-    #             }
-    #           }
-    #      expect(response).to have_http_status(:unprocessable_entity)
-    #    end
-    #  end
-    #
+    it 'should not create a new user with taken email' do
+      post '/api/v1/users',
+           params: {
+             user: {
+               email: 'test1@test.com',
+               password: 'test7777',
+               password_digest: 'test7777',
+               username: 'testusename1555',
+               role_id: Role.first.id,
+               department_id: Department.first.id,
+               person_id: Person.last.id
+             }
+           }
+      expect(response).to have_http_status(:unprocessable_entity)
+    end
+
+    it 'should not create a new user with taken username' do
+      post '/api/v1/users',
+           params: {
+             user: {
+               email: 'testXXXX@test.com',
+               password: 'test7777',
+               password_digest: 'test7777',
+               username: 'testusername1',
+               role_id: Role.first.id,
+               department_id: Department.first.id,
+               person_id: Person.last.id
+             }
+           }
+      expect(response).to have_http_status(:unprocessable_entity)
+    end
+
     #  describe 'PATCH /users/id' do
     #    it 'should not update a existing user without token' do
     #      role = Role.create(name: 'admin')

@@ -138,3 +138,6 @@ maximumUserId = DoctorUsers.maximum(:id)
   Appointment.create! appointmentDate: '2021-02-17', startTime: '2021-02-17 16:00 PM', endTime: '2021-02-17 12:00 AM', status: true, user_id: userpatient1.id, doctor_id: maximumUserId
   maximumUserId = maximumUserId -1
 end  
+
+
+person11 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
