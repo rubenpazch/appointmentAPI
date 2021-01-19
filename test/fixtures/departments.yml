@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 'Department 1'
+  contactNumber: '123456123'
+  location: 'Oficce 101'
+
+two:
+  name: 'Department 2'
+  contactNumber: '123456999'
+  location: 'Oficce 102'

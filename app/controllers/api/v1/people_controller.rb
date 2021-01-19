@@ -1,6 +1,8 @@
 class Api::V1::PeopleController < ApplicationController
   def create
     @person = Person.new(person_params)
+    @person.firstName.downcase
+    @person.lastName.downcase
 
     if @person.save
       render json: PersonSerializer.new(@person).serializable_hash, status: :created
@@ -19,5 +21,9 @@ class Api::V1::PeopleController < ApplicationController
       :phone,
       :historyNumber,
     )
+  end
+
+  def before_save 
+
   end
 end

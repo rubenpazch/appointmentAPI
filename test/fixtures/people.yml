@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  firstName: 'firsname1'
+  firstName: 'firstname1'
   lastName: 'lastname1'
   documentId: '12345678'
   phone: '1234566783'
   historyNumber: '123456768345'
 
 two:
-  firstName: 'firsname2'
+  firstName: 'firstname2'
   lastName: 'lastname2'
   documentId: '1234567338'
   phone: '1234566783'
-  historyNumber: '123456768345'
+  historyNumber: '23476726347'

@@ -10,21 +10,21 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   has_secure_password
 
-  # scope :filter_by_doctors, -> {
-  #  joins(:role).where(roles: { code: 'D' })
-  # }
+  scope :filter_by_doctors, -> {
+   joins(:role).where(roles: { code: 'D' })
+  }
 
-  # scope :filter_by_admin, -> {
-  #  joins(:role).where(roles: { code: 'A' })
-  # }
+  scope :filter_by_admin, -> {
+   joins(:role).where(roles: { code: 'A' })
+  }
 
-  # scope :filter_by_patients, -> {
-  #  joins(:role).where(roles: { code: 'P' })
-  # }
+  scope :filter_by_patients, -> {
+   joins(:role).where(roles: { code: 'P' })
+  }
 
   # rubocop:disable Lint/Syntax
-  # def timeable_doctor(start_date, end_date)
-  #  doctor_calendar.where(:startDate => (start_date)..end_date)
-  # end
+  def timeable_doctor(start_date, end_date)
+   doctor_calendar.where(:startDate => (start_date)..end_date)
+  end
   # rubocop:enable Lint/Syntax
 end

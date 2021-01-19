@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
   has_one :user
 
-  validates :person, uniqueness: { scope: [:firstName, :lastName] }
+  validates :firstName, uniqueness: { scope: [:lastName] }
+  validates :documentId, uniqueness: true
 end
