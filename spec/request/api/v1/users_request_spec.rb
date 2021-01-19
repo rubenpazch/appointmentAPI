@@ -109,7 +109,7 @@ describe 'Users API', type: :request do
     end
 
     it 'should create a new user' do
-      puts User.count
+      
       expect {
         post '/api/v1/users',
              params: {
