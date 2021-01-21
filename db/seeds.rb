@@ -19,12 +19,12 @@ role1 = Role.create(name: 'Admin', code: 'A')
 role2 = Role.create(name: 'Doctor', code: 'D')
 role3 = Role.create(name: 'Patient', code: 'P')
  
-department1 = Department.create! name: 'Surgery', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
-department2 = Department.create! name: 'Medicine', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
-department3 = Department.create! name: 'Cancer Care', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
-department4 = Department.create! name: 'Urology', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
-department5 = Department.create! name: 'Unknow', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
-department6 = Department.create! name: 'Administrator', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address
+department1 = Department.create! name: 'Surgery', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'D'
+department2 = Department.create! name: 'Medicine', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'D'
+department3 = Department.create! name: 'Cancer Care', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'D'
+department4 = Department.create! name: 'Urology', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'D'
+department5 = Department.create! name: 'Unknow', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'P'
+department6 = Department.create! name: 'Administrator', contactNumber: Faker::PhoneNumber.cell_phone_in_e164, location: Faker::Address.street_address, code: 'A'
 
 
 shift1 = Shift.create! totalShift: 32, interval: 15,  startDate: '2021-02-01 ', endDate: '2021-02-28 ', department_id: department1.id
