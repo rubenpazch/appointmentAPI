@@ -195,3 +195,22 @@ userpatient12 = User.create! email: Faker::Internet.email, password: '1234567890
 Appointment.create! appointmentDate: '2021-01-21', startTime: '2021-01-21 8:30 AM', endTime: '2021-01-21 8:45 AM', status: true, user_id: userpatient12.id, doctor_id: maximumUserId
 
 person12 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+
+
+# service a
+
+maximumUserId = maximumUserId - 1
+
+personPatient13 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userpatient13 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient13.id, department_id: department5.id
+Appointment.create! appointmentDate: '2021-01-21', startTime: '2021-01-21 9:00 AM', endTime: '2021-01-21 9:15 AM', status: true, user_id: userpatient13.id, doctor_id: maximumUserId
+
+personPatient14 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userpatient14 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient14.id, department_id: department5.id
+Appointment.create! appointmentDate: '2021-01-21', startTime: '2021-01-21 9:15 AM', endTime: '2021-01-21 9:30 AM', status: true, user_id: userpatient14.id, doctor_id: maximumUserId
+
+personPatient15 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userpatient15 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient15.id, department_id: department5.id
+Appointment.create! appointmentDate: '2021-01-21', startTime: '2021-01-21 9:30 AM', endTime: '2021-01-21 9:45 AM', status: true, user_id: userpatient15.id, doctor_id: maximumUserId
+
+person12 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
