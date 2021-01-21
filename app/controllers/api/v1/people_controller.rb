@@ -23,7 +23,6 @@ class Api::V1::PeopleController < ApplicationController
     )
   end
 
-  def before_save 
-
+  def before_save
   end
 end
