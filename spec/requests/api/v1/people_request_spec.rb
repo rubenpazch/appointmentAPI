@@ -33,19 +33,19 @@ RSpec.describe "Api::V1::People", type: :request do
     end
 
     it 'should not create duplicate person' do
-     expect {
-       post '/api/v1/people/',
-            params: {
-              person: {
-                firstName: Faker::Name.first_name,
-                lastName: Faker::Name.last_name,
-                documentId: Faker::IDNumber.chilean_id,
-                phone: Faker::PhoneNumber.cell_phone_in_e164,
-                historyNumber: Faker::IDNumber.valid
-              }
-            }
-     }.to change { Person.count }.from(2).to(3)
-     expect(response).to have_http_status(:created)
+      expect {
+        post '/api/v1/people/',
+             params: {
+               person: {
+                 firstName: Faker::Name.first_name,
+                 lastName: Faker::Name.last_name,
+                 documentId: Faker::IDNumber.chilean_id,
+                 phone: Faker::PhoneNumber.cell_phone_in_e164,
+                 historyNumber: Faker::IDNumber.valid
+               }
+             }
+      }.to change { Person.count }.from(2).to(3)
+      expect(response).to have_http_status(:created)
     end
   end
 end
