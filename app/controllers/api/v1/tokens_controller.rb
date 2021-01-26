@@ -5,7 +5,8 @@ class Api::V1::TokensController < ApplicationController
     if @user&.authenticate(user_params[:password])
       render json: {
         token: JsonWebToken.encode(user_id: @user.id),
-        username: @user.username
+        username: @user.username,
+        user_id: @user.id
       }
     else
       head :unauthorized

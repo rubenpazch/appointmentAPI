@@ -202,67 +202,67 @@ DoctorCalendar.create! startDate: '2021-01-30', endDate: '2021-01-30', startTime
 
 personPatient1 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient1 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient1.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:00 AM', endTime: '2021-01-24 8:15 AM', status: true, user_id: userpatient1.id, doctor_id: userDoctor1.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:00 AM', endTime: '2021-01-25 8:15 AM', status: true, user_id: userpatient1.id, doctor_id: userDoctor1.id
 
 personPatient2 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient2 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient2.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:15 AM', endTime: '2021-01-24 8:30 AM', status: true, user_id: userpatient2.id, doctor_id: userDoctor1.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:15 AM', endTime: '2021-01-25 8:30 AM', status: true, user_id: userpatient2.id, doctor_id: userDoctor1.id
 
 personPatient3 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient3 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient3.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:30 AM', endTime: '2021-01-24 8:45 AM', status: true, user_id: userpatient3.id, doctor_id: userDoctor1.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:30 AM', endTime: '2021-01-25 8:45 AM', status: true, user_id: userpatient3.id, doctor_id: userDoctor1.id
 
 personPatient4 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient4 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient4.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:00 AM', endTime: '2021-01-24 8:15 AM', status: true, user_id: userpatient4.id, doctor_id: userDoctor2.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:00 AM', endTime: '2021-01-25 8:15 AM', status: true, user_id: userpatient4.id, doctor_id: userDoctor2.id
 
 personPatient5 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient5 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient5.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:15 AM', endTime: '2021-01-24 8:30 AM', status: true, user_id: userpatient5.id, doctor_id: userDoctor2.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:15 AM', endTime: '2021-01-25 8:30 AM', status: true, user_id: userpatient5.id, doctor_id: userDoctor2.id
 
 personPatient6 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient6 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient6.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:30 AM', endTime: '2021-01-24 8:45 AM', status: true, user_id: userpatient6.id, doctor_id: userDoctor2.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:30 AM', endTime: '2021-01-25 8:45 AM', status: true, user_id: userpatient6.id, doctor_id: userDoctor2.id
 
 personPatient7 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient7 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient7.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:00 AM', endTime: '2021-01-24 8:15 AM', status: true, user_id: userpatient7.id, doctor_id: userDoctor3.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:00 AM', endTime: '2021-01-25 8:15 AM', status: true, user_id: userpatient7.id, doctor_id: userDoctor3.id
 
 personPatient8 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient8 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient8.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:15 AM', endTime: '2021-01-24 8:30 AM', status: true, user_id: userpatient8.id, doctor_id: userDoctor3.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:15 AM', endTime: '2021-01-25 8:30 AM', status: true, user_id: userpatient8.id, doctor_id: userDoctor3.id
 
 personPatient9 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient9 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient9.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:30 AM', endTime: '2021-01-24 8:45 AM', status: true, user_id: userpatient9.id, doctor_id: userDoctor3.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:30 AM', endTime: '2021-01-25 8:45 AM', status: true, user_id: userpatient9.id, doctor_id: userDoctor3.id
 
 personPatient10 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient10 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient10.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:00 AM', endTime: '2021-01-24 8:15 AM', status: true, user_id: userpatient10.id, doctor_id: userDoctor4.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:00 AM', endTime: '2021-01-25 8:15 AM', status: true, user_id: userpatient10.id, doctor_id: userDoctor4.id
 
 personPatient11 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient11 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient11.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:15 AM', endTime: '2021-01-24 8:30 AM', status: true, user_id: userpatient11.id, doctor_id: userDoctor4.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:15 AM', endTime: '2021-01-25 8:30 AM', status: true, user_id: userpatient11.id, doctor_id: userDoctor4.id
 
 personPatient12 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient12 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient12.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 8:30 AM', endTime: '2021-01-24 8:45 AM', status: true, user_id: userpatient12.id, doctor_id: userDoctor4.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 8:30 AM', endTime: '2021-01-25 8:45 AM', status: true, user_id: userpatient12.id, doctor_id: userDoctor4.id
 
 personPatient13 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient13 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient13.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 9:00 AM', endTime: '2021-01-24 9:15 AM', status: true, user_id: userpatient13.id, doctor_id: userDoctor5.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 9:00 AM', endTime: '2021-01-25 9:15 AM', status: true, user_id: userpatient13.id, doctor_id: userDoctor5.id
 
 personPatient14 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient14 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient14.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 9:15 AM', endTime: '2021-01-24 9:30 AM', status: true, user_id: userpatient14.id, doctor_id: userDoctor5.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 9:15 AM', endTime: '2021-01-25 9:30 AM', status: true, user_id: userpatient14.id, doctor_id: userDoctor5.id
 
 personPatient15 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient15 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient15.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 9:30 AM', endTime: '2021-01-24 9:45 AM', status: true, user_id: userpatient15.id, doctor_id: userDoctor5.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 9:30 AM', endTime: '2021-01-25 9:45 AM', status: true, user_id: userpatient15.id, doctor_id: userDoctor5.id
 
 personPatient16 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userpatient16 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, role_id: role3.id, person_id: personPatient16.id, department_id: department5.id
-Appointment.create! appointmentDate: '2021-01-24', startTime: '2021-01-24 10:00 AM', endTime: '2021-01-24 10:15 AM', status: true, user_id: userpatient16.id, doctor_id: userDoctor5.id
+Appointment.create! appointmentDate: '2021-01-25', startTime: '2021-01-25 10:00 AM', endTime: '2021-01-25 10:15 AM', status: true, user_id: userpatient16.id, doctor_id: userDoctor5.id
 
 
 
