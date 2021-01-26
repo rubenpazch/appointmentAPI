@@ -4,7 +4,9 @@ class Api::V1::GetappointmentsController < ApplicationController
       Appointment.list_by_department_date(
         appointment_params[:department_id],
         appointment_params[:date]
-      )
+      ),
+      include: [:user, :person],
+      
     ).serializable_hash,
            status: :ok
   end

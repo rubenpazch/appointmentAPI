@@ -6,7 +6,7 @@ class Api::V1::UsersController < ApplicationController
   def show
     if User.exists?(params[:id])
       @user = User.find(params[:id])
-      render json: UserSerializer.new(@user).serializable_hash, status: :ok
+      render json: UserSerializer.new(@user ,include: [:user]).serializable_hash, status: :ok
     else
       head :no_content
     end
