@@ -45,8 +45,8 @@ RSpec.describe "Api::V1::Appointments", type: :request do
                                              contactNumber: Faker::PhoneNumber.cell_phone_in_e164,
                                              location: Faker::Address.street_address
       @departmentDoctor2 = Department.create! name: 'Medicine',
-                                             contactNumber: Faker::PhoneNumber.cell_phone_in_e164,
-                                             location: Faker::Address.street_address                                             
+                                              contactNumber: Faker::PhoneNumber.cell_phone_in_e164,
+                                              location: Faker::Address.street_address
 
       @departmentPatient = Department.create! name: 'Unknow',
                                               contactNumber: Faker::PhoneNumber.cell_phone_in_e164,
@@ -60,24 +60,24 @@ RSpec.describe "Api::V1::Appointments", type: :request do
                                  person_id: @person.id)
 
       @userPatient2 = User.create(email: 'usernamepatient2@test.com',
-                                 password_digest: 'password',
-                                 username: 'usernamepatient2',
-                                 role_id: @rolePatient.id,
-                                 department_id: @departmentPatient.id,
-                                 person_id: @person4.id)
-    
+                                  password_digest: 'password',
+                                  username: 'usernamepatient2',
+                                  role_id: @rolePatient.id,
+                                  department_id: @departmentPatient.id,
+                                  person_id: @person4.id)
+
       @userPatient3 = User.create(email: 'usernamepatient3@test.com',
-                                 password_digest: 'password',
-                                 username: 'usernamepatient3',
-                                 role_id: @rolePatient.id,
-                                 department_id: @departmentPatient.id,
-                                 person_id: @person5.id)                     
+                                  password_digest: 'password',
+                                  username: 'usernamepatient3',
+                                  role_id: @rolePatient.id,
+                                  department_id: @departmentPatient.id,
+                                  person_id: @person5.id)
       @userPatient4 = User.create(email: 'usernamepatient4@test.com',
-                                 password_digest: 'password',
-                                 username: 'usernamepatient4',
-                                 role_id: @rolePatient.id,
-                                 department_id: @departmentPatient.id,
-                                 person_id: @person6.id)  
+                                  password_digest: 'password',
+                                  username: 'usernamepatient4',
+                                  role_id: @rolePatient.id,
+                                  department_id: @departmentPatient.id,
+                                  person_id: @person6.id)
       @userDoctor = User.create(email: 'usernamedoctor1@test.com',
                                 password_digest: 'test2',
                                 username: 'usernamedoctor1',
@@ -86,11 +86,11 @@ RSpec.describe "Api::V1::Appointments", type: :request do
                                 person_id: @person2.id)
 
       @userDoctor2 = User.create(email: 'usernamedoctor2@test.com',
-                                password_digest: 'test2',
-                                username: 'usernamedoctor2',
-                                role_id: @roleDoctor.id,
-                                department_id: @departmentDoctor2.id,
-                                person_id: @person3.id)
+                                 password_digest: 'test2',
+                                 username: 'usernamedoctor2',
+                                 role_id: @roleDoctor.id,
+                                 department_id: @departmentDoctor2.id,
+                                 person_id: @person3.id)
 
       @appointment1 = Appointment.new(
         appointmentDate: '2021-01-22',
@@ -101,7 +101,6 @@ RSpec.describe "Api::V1::Appointments", type: :request do
         doctor_id: @userDoctor.id
       )
       @appointment1.save!
-
     end
 
     it 'should create a new appointment first time' do

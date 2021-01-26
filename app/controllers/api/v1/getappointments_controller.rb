@@ -6,7 +6,6 @@ class Api::V1::GetappointmentsController < ApplicationController
         appointment_params[:date]
       ),
       include: [:user, :person],
-      
     ).serializable_hash,
            status: :ok
   end

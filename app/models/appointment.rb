@@ -4,7 +4,8 @@ class Appointment < ApplicationRecord
   has_one :department, :through => :doctor
   has_one :person, :through => :user
 
-  validates_uniqueness_of :appointmentDate, scope: %i[startTime endTime doctor_id], message: 'The appointment date is already taken' 
+  validates_uniqueness_of :appointmentDate, scope: %i[startTime endTime doctor_id],
+                                            message: 'The appointment date is already taken'
   validates_associated :doctor
   validates_uniqueness_of :user_id, scope: %i[appointmentDate], message: 'You can register just one appointment per day'
 
@@ -15,6 +16,4 @@ class Appointment < ApplicationRecord
                                       .where(:department => { id: departmentid })
                                       .where(:appointments => { appointmentDate: date })
                                   }
-
-  
 end
