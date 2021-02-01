@@ -87,6 +87,93 @@ DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime
 DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
 DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
 
+person12 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userDoctor12 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor2.jpg', role_id: role2.id, person_id: person12.id, department_id: department1.id
+DoctorCalendar.create! startDate: '2021-01-31', endDate: '2021-01-31', startTime: '2021-01-31 16:00 PM', endTime: '2021-01-31 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-01', endDate: '2021-02-01', startTime: '2021-02-01 16:00 PM', endTime: '2021-02-01 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-02', endDate: '2021-02-02', startTime: '2021-02-02 16:00 PM', endTime: '2021-02-02 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-03', endDate: '2021-02-03', startTime: '2021-02-03 16:00 PM', endTime: '2021-02-03 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-04', endDate: '2021-02-04', startTime: '2021-02-04 16:00 PM', endTime: '2021-02-04 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-05', endDate: '2021-02-05', startTime: '2021-02-05 16:00 PM', endTime: '2021-02-05 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-06', endDate: '2021-02-06', startTime: '2021-02-06 16:00 PM', endTime: '2021-02-06 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-07', endDate: '2021-02-07', startTime: '2021-02-07 16:00 PM', endTime: '2021-02-07 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-08', endDate: '2021-02-08', startTime: '2021-02-08 16:00 PM', endTime: '2021-02-08 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-09', endDate: '2021-02-09', startTime: '2021-02-09 16:00 PM', endTime: '2021-02-09 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 16:00 PM', endTime: '2021-02-10 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 16:00 PM', endTime: '2021-02-11 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+
+
+person13 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userDoctor13 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg', role_id: role2.id, person_id: person13.id, department_id: department1.id
+DoctorCalendar.create! startDate: '2021-01-31', endDate: '2021-01-31', startTime: '2021-01-31 16:00 PM', endTime: '2021-01-31 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-01', endDate: '2021-02-01', startTime: '2021-02-01 16:00 PM', endTime: '2021-02-01 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-02', endDate: '2021-02-02', startTime: '2021-02-02 16:00 PM', endTime: '2021-02-02 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-03', endDate: '2021-02-03', startTime: '2021-02-03 16:00 PM', endTime: '2021-02-03 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-04', endDate: '2021-02-04', startTime: '2021-02-04 16:00 PM', endTime: '2021-02-04 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-05', endDate: '2021-02-05', startTime: '2021-02-05 16:00 PM', endTime: '2021-02-05 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-06', endDate: '2021-02-06', startTime: '2021-02-06 16:00 PM', endTime: '2021-02-06 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-07', endDate: '2021-02-07', startTime: '2021-02-07 16:00 PM', endTime: '2021-02-07 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-08', endDate: '2021-02-08', startTime: '2021-02-08 16:00 PM', endTime: '2021-02-08 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-09', endDate: '2021-02-09', startTime: '2021-02-09 16:00 PM', endTime: '2021-02-09 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 16:00 PM', endTime: '2021-02-10 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 16:00 PM', endTime: '2021-02-11 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+
+person14 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userDoctor14 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person14.id, department_id: department1.id
+DoctorCalendar.create! startDate: '2021-01-31', endDate: '2021-01-31', startTime: '2021-01-31 16:00 PM', endTime: '2021-01-31 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-01', endDate: '2021-02-01', startTime: '2021-02-01 16:00 PM', endTime: '2021-02-01 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-02', endDate: '2021-02-02', startTime: '2021-02-02 16:00 PM', endTime: '2021-02-02 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-03', endDate: '2021-02-03', startTime: '2021-02-03 16:00 PM', endTime: '2021-02-03 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-04', endDate: '2021-02-04', startTime: '2021-02-04 16:00 PM', endTime: '2021-02-04 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-05', endDate: '2021-02-05', startTime: '2021-02-05 16:00 PM', endTime: '2021-02-05 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-06', endDate: '2021-02-06', startTime: '2021-02-06 16:00 PM', endTime: '2021-02-06 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-07', endDate: '2021-02-07', startTime: '2021-02-07 16:00 PM', endTime: '2021-02-07 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-08', endDate: '2021-02-08', startTime: '2021-02-08 16:00 PM', endTime: '2021-02-08 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-09', endDate: '2021-02-09', startTime: '2021-02-09 16:00 PM', endTime: '2021-02-09 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 16:00 PM', endTime: '2021-02-10 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 16:00 PM', endTime: '2021-02-11 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+
+
+person15 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userDoctor15 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg', role_id: role2.id, person_id: person15.id, department_id: department1.id
+DoctorCalendar.create! startDate: '2021-01-31', endDate: '2021-01-31', startTime: '2021-01-31 16:00 PM', endTime: '2021-01-31 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-01', endDate: '2021-02-01', startTime: '2021-02-01 16:00 PM', endTime: '2021-02-01 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-02', endDate: '2021-02-02', startTime: '2021-02-02 16:00 PM', endTime: '2021-02-02 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-03', endDate: '2021-02-03', startTime: '2021-02-03 16:00 PM', endTime: '2021-02-03 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-04', endDate: '2021-02-04', startTime: '2021-02-04 16:00 PM', endTime: '2021-02-04 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-05', endDate: '2021-02-05', startTime: '2021-02-05 16:00 PM', endTime: '2021-02-05 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-06', endDate: '2021-02-06', startTime: '2021-02-06 16:00 PM', endTime: '2021-02-06 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-07', endDate: '2021-02-07', startTime: '2021-02-07 16:00 PM', endTime: '2021-02-07 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-08', endDate: '2021-02-08', startTime: '2021-02-08 16:00 PM', endTime: '2021-02-08 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-09', endDate: '2021-02-09', startTime: '2021-02-09 16:00 PM', endTime: '2021-02-09 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 16:00 PM', endTime: '2021-02-10 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 16:00 PM', endTime: '2021-02-11 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+
+person16 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
+userDoctor16 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person16.id, department_id: department1.id
+DoctorCalendar.create! startDate: '2021-01-31', endDate: '2021-01-31', startTime: '2021-01-31 16:00 PM', endTime: '2021-01-31 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-01', endDate: '2021-02-01', startTime: '2021-02-01 16:00 PM', endTime: '2021-02-01 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-02', endDate: '2021-02-02', startTime: '2021-02-02 16:00 PM', endTime: '2021-02-02 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-03', endDate: '2021-02-03', startTime: '2021-02-03 16:00 PM', endTime: '2021-02-03 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-04', endDate: '2021-02-04', startTime: '2021-02-04 16:00 PM', endTime: '2021-02-04 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-05', endDate: '2021-02-05', startTime: '2021-02-05 16:00 PM', endTime: '2021-02-05 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-06', endDate: '2021-02-06', startTime: '2021-02-06 16:00 PM', endTime: '2021-02-06 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-07', endDate: '2021-02-07', startTime: '2021-02-07 16:00 PM', endTime: '2021-02-07 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-08', endDate: '2021-02-08', startTime: '2021-02-08 16:00 PM', endTime: '2021-02-08 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-09', endDate: '2021-02-09', startTime: '2021-02-09 16:00 PM', endTime: '2021-02-09 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 16:00 PM', endTime: '2021-02-10 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 16:00 PM', endTime: '2021-02-11 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 16:00 PM', endTime: '2021-02-12 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 16:00 PM', endTime: '2021-02-13 24:00 AM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+
 # Create Doctors data 2
 person2 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor2 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg',role_id: role2.id, person_id: person2.id, department_id: department2.id
