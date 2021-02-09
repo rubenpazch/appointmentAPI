@@ -16,4 +16,5 @@ class Appointment < ApplicationRecord
                                       .where(:department => { id: departmentid })
                                       .where(:appointments => { appointmentDate: date })
                                   }
+  scope :list_by_patient, -> user_id { where(user_id: user_id)}
 end

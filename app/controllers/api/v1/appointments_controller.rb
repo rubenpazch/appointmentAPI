@@ -1,10 +1,10 @@
 class Api::V1::AppointmentsController < ApplicationController
   def index
     render json: AppointmentSerializer.new(
-      Appointment.list_by_department_date(
-        appointment_params[:department_id],
-        appointment_params[:date]
-      )
+      Appointment.list_by_patient(
+        params[:user_id]
+      ),
+      include: [:user, :person],
     ).serializable_hash,
            status: :ok
   end

@@ -181,5 +181,14 @@ RSpec.describe "Api::V1::Appointments", type: :request do
       }.to change { Appointment.count }.from(1).to(2)
       expect(response).to have_http_status(:created)
     end
+    it "returns http success" do
+      get "/api/v1/appointments",
+           params: {
+             appointment: {
+               user_id: @userPatient.id
+             }
+           }
+      expect(response).to have_http_status(:success)
+    end
   end
 end

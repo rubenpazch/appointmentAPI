@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json }  do
     namespace :v1 do
-      resources :appointments, only: %i[create]
+      resources :appointments, only: %i[create index]
     end 
   end
 
