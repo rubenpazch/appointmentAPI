@@ -4,7 +4,7 @@ class Api::V1::AppointmentsController < ApplicationController
       Appointment.list_by_patient(
         params[:user_id]
       ),
-      include: [:user, :person, :department],
+      include: %i[user person department]
     ).serializable_hash,
            status: :ok
   end

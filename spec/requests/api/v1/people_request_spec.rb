@@ -1,6 +1,7 @@
+# rubocop:disable Lint/UselessAssignment
 require 'rails_helper'
 
-RSpec.describe "Api::V1::People", type: :request do
+RSpec.describe 'Api::V1::People', type: :request do
   describe 'POST /person' do
     before(:each) do
       person = Person.create! firstName: Faker::Name.first_name,
@@ -17,7 +18,7 @@ RSpec.describe "Api::V1::People", type: :request do
     end
 
     it 'should create a new person' do
-      expect {
+      expect do
         post '/api/v1/people/',
              params: {
                person: {
@@ -28,12 +29,12 @@ RSpec.describe "Api::V1::People", type: :request do
                  historyNumber: Faker::IDNumber.valid
                }
              }
-      }.to change { Person.count }.from(2).to(3)
+      end.to change { Person.count }.from(2).to(3)
       expect(response).to have_http_status(:created)
     end
 
     it 'should not create duplicate person' do
-      expect {
+      expect do
         post '/api/v1/people/',
              params: {
                person: {
@@ -44,8 +45,9 @@ RSpec.describe "Api::V1::People", type: :request do
                  historyNumber: Faker::IDNumber.valid
                }
              }
-      }.to change { Person.count }.from(2).to(3)
+      end.to change { Person.count }.from(2).to(3)
       expect(response).to have_http_status(:created)
     end
   end
 end
+# rubocop:enable Lint/UselessAssignment

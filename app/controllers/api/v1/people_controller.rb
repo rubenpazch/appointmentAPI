@@ -19,10 +19,7 @@ class Api::V1::PeopleController < ApplicationController
       :lastName,
       :documentId,
       :phone,
-      :historyNumber,
+      :historyNumber
     )
-  end
-
-  def before_save
   end
 end

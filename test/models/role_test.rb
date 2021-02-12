@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class RoleTest < ActiveSupport::TestCase
   test 'role with a valid name should be valid' do

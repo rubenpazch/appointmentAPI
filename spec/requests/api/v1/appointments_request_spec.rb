@@ -1,6 +1,8 @@
+# rubocop:disable Metrics/BlockLength
+# rubocop:disable Naming/VariableName
 require 'rails_helper'
 
-RSpec.describe "Api::V1::Appointments", type: :request do
+RSpec.describe 'Api::V1::Appointments', type: :request do
   describe 'POST /  appointments' do
     before(:each) do
       @rolePatient = Role.create(name: 'patient')
@@ -104,7 +106,7 @@ RSpec.describe "Api::V1::Appointments", type: :request do
     end
 
     it 'should create a new appointment first time' do
-      expect {
+      expect do
         post '/api/v1/appointments',
              params: {
                appointment: {
@@ -116,7 +118,7 @@ RSpec.describe "Api::V1::Appointments", type: :request do
                  doctor_id: @userDoctor.id
                }
              }
-      }.to change { Appointment.count }.from(1).to(2)
+      end.to change { Appointment.count }.from(1).to(2)
       expect(response).to have_http_status(:created)
     end
 
@@ -166,7 +168,7 @@ RSpec.describe "Api::V1::Appointments", type: :request do
     end
 
     it 'should create a new appointment in different days' do
-      expect {
+      expect do
         post '/api/v1/appointments',
              params: {
                appointment: {
@@ -178,11 +180,11 @@ RSpec.describe "Api::V1::Appointments", type: :request do
                  doctor_id: @userDoctor.id
                }
              }
-      }.to change { Appointment.count }.from(1).to(2)
+      end.to change { Appointment.count }.from(1).to(2)
       expect(response).to have_http_status(:created)
     end
-    it "returns http success" do
-      get "/api/v1/appointments",
+    it 'returns http success' do
+      get '/api/v1/appointments',
           params: {
             appointment: {
               user_id: @userPatient.id
@@ -192,3 +194,5 @@ RSpec.describe "Api::V1::Appointments", type: :request do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
+# rubocop:enable Naming/VariableName

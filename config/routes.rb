@@ -33,7 +33,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :departments, only: %i[index] do 
         member do
-          get :getPatientDepartment
+          get :patient_department_item
         end
       end
     end 

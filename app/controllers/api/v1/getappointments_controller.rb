@@ -5,7 +5,7 @@ class Api::V1::GetappointmentsController < ApplicationController
         appointment_params[:department_id],
         appointment_params[:date]
       ),
-      include: [:user, :person],
+      include: %i[user person]
     ).serializable_hash,
            status: :ok
   end
