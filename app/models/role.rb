@@ -3,5 +3,5 @@ class Role < ApplicationRecord
   validates :name, presence: true
   validates :name, uniqueness: true
 
-  scope :patient_role_id, -> { where(code: 'P')}
+  scope :patient_role_id, -> { where(code: 'P') }
 end

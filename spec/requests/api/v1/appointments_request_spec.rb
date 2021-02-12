@@ -183,11 +183,11 @@ RSpec.describe "Api::V1::Appointments", type: :request do
     end
     it "returns http success" do
       get "/api/v1/appointments",
-           params: {
-             appointment: {
-               user_id: @userPatient.id
-             }
-           }
+          params: {
+            appointment: {
+              user_id: @userPatient.id
+            }
+          }
       expect(response).to have_http_status(:success)
     end
   end
