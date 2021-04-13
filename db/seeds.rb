@@ -53,56 +53,24 @@ User.create! email: 'rubenpazchuspe@outlook.com', password: '1234567890', userna
 # Create Doctors data
 person1 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor1 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username,  linkImage: '/media/doctors/doctor2.jpg', role_id: role2.id, person_id: person1.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor1.id, shiftinterval: 15
+
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor1.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor1.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor1.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 
@@ -110,657 +78,261 @@ DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime
 # Create Doctors data
 person11 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor11 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor3.png', role_id: role2.id, person_id: person11.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
+
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor11.id, shiftinterval: 30
+    end
+  end  
+end
+
 
 
 
 person12 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor12 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor2.jpg', role_id: role2.id, person_id: person12.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor12.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 
 person13 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor13 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg', role_id: role2.id, person_id: person13.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor13.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 person14 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor14 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person14.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor14.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 
 person15 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor15 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg', role_id: role2.id, person_id: person15.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor15.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 person16 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor16 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person16.id, department_id: department1.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor16.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 # Create Doctors data 2
 person2 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor2 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor4.jpg',role_id: role2.id, person_id: person2.id, department_id: department2.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
-
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor2.id, shiftinterval: 30
+    end
+  end  
+end
 
 person22 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor22 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username,linkImage: '/media/doctors/doctor5.png', role_id: role2.id, person_id: person22.id, department_id: department2.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor22.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 #Person 3
 person3 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor3 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/doctor6.png', role_id: role2.id, person_id: person3.id, department_id: department3.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor3.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 person33 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor33 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png',role_id: role2.id, person_id: person33.id, department_id: department3.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor33.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 #Person 4
 person4 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor4 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person4.id, department_id: department4.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
-
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor4.id, shiftinterval: 30
+    end
+  end  
+end
 
 #Person 5
 person5 = Person.create! firstName: Faker::Name.first_name, lastName: Faker::Name.last_name, documentId: Faker::IDNumber.chilean_id , phone: Faker::PhoneNumber.cell_phone_in_e164, historyNumber: Faker::IDNumber.valid 
 userDoctor5 = User.create! email: Faker::Internet.email, password: '1234567890', username: Faker::Internet.username, linkImage: '/media/doctors/default.png', role_id: role2.id, person_id: person5.id, department_id: department5.id
-DoctorCalendar.create! startDate: '2021-02-10', endDate: '2021-02-10', startTime: '2021-02-10 08:00 AM', endTime: '2021-02-10 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-11', endDate: '2021-02-11', startTime: '2021-02-11 08:00 AM', endTime: '2021-02-11 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-12', endDate: '2021-02-12', startTime: '2021-02-12 08:00 AM', endTime: '2021-02-12 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-13', endDate: '2021-02-13', startTime: '2021-02-13 08:00 AM', endTime: '2021-02-13 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-14', endDate: '2021-02-14', startTime: '2021-02-14 08:00 AM', endTime: '2021-02-14 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-15', endDate: '2021-02-15', startTime: '2021-02-15 08:00 AM', endTime: '2021-02-15 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-16', endDate: '2021-02-16', startTime: '2021-02-16 08:00 AM', endTime: '2021-02-16 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-17', endDate: '2021-02-17', startTime: '2021-02-17 08:00 AM', endTime: '2021-02-17 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-18', endDate: '2021-02-18', startTime: '2021-02-18 08:00 AM', endTime: '2021-02-18 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-19', endDate: '2021-02-19', startTime: '2021-02-19 08:00 AM', endTime: '2021-02-19 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-20', endDate: '2021-02-20', startTime: '2021-02-20 08:00 AM', endTime: '2021-02-20 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-21', endDate: '2021-02-21', startTime: '2021-02-21 08:00 AM', endTime: '2021-02-21 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-22', endDate: '2021-02-22', startTime: '2021-02-22 08:00 AM', endTime: '2021-02-22 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-23', endDate: '2021-02-23', startTime: '2021-02-23 08:00 AM', endTime: '2021-02-23 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-24', endDate: '2021-02-24', startTime: '2021-02-24 08:00 AM', endTime: '2021-02-24 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-25', endDate: '2021-02-25', startTime: '2021-02-25 08:00 AM', endTime: '2021-02-25 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-26', endDate: '2021-02-26', startTime: '2021-02-26 08:00 AM', endTime: '2021-02-26 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-27', endDate: '2021-02-27', startTime: '2021-02-27 08:00 AM', endTime: '2021-02-27 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-02-28', endDate: '2021-02-28', startTime: '2021-02-28 08:00 AM', endTime: '2021-02-28 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-01', endDate: '2021-03-01', startTime: '2021-03-01 08:00 AM', endTime: '2021-03-01 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-02', endDate: '2021-03-02', startTime: '2021-03-02 08:00 AM', endTime: '2021-03-02 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-03', endDate: '2021-03-03', startTime: '2021-03-03 08:00 AM', endTime: '2021-03-03 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-04', endDate: '2021-03-04', startTime: '2021-03-04 08:00 AM', endTime: '2021-03-04 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-05', endDate: '2021-03-05', startTime: '2021-03-05 08:00 AM', endTime: '2021-03-05 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-06', endDate: '2021-03-06', startTime: '2021-03-06 08:00 AM', endTime: '2021-03-06 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-07', endDate: '2021-03-07', startTime: '2021-03-07 08:00 AM', endTime: '2021-03-07 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-08', endDate: '2021-03-08', startTime: '2021-03-08 08:00 AM', endTime: '2021-03-08 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-09', endDate: '2021-03-09', startTime: '2021-03-09 08:00 AM', endTime: '2021-03-09 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-10', endDate: '2021-03-10', startTime: '2021-03-10 08:00 AM', endTime: '2021-03-10 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-11', endDate: '2021-03-11', startTime: '2021-03-11 08:00 AM', endTime: '2021-03-11 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-12', endDate: '2021-03-12', startTime: '2021-03-12 08:00 AM', endTime: '2021-03-12 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-13', endDate: '2021-03-13', startTime: '2021-03-13 08:00 AM', endTime: '2021-03-13 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-14', endDate: '2021-03-14', startTime: '2021-03-14 08:00 AM', endTime: '2021-03-14 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-15', endDate: '2021-03-15', startTime: '2021-03-15 08:00 AM', endTime: '2021-03-15 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-16', endDate: '2021-03-16', startTime: '2021-03-16 08:00 AM', endTime: '2021-03-16 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-17', endDate: '2021-03-17', startTime: '2021-03-17 08:00 AM', endTime: '2021-03-17 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-18', endDate: '2021-03-18', startTime: '2021-03-18 08:00 AM', endTime: '2021-03-18 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-19', endDate: '2021-03-19', startTime: '2021-03-19 08:00 AM', endTime: '2021-03-19 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-20', endDate: '2021-03-20', startTime: '2021-03-20 08:00 AM', endTime: '2021-03-20 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-21', endDate: '2021-03-21', startTime: '2021-03-21 08:00 AM', endTime: '2021-03-21 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-22', endDate: '2021-03-22', startTime: '2021-03-22 08:00 AM', endTime: '2021-03-22 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-23', endDate: '2021-03-23', startTime: '2021-03-23 08:00 AM', endTime: '2021-03-23 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-24', endDate: '2021-03-24', startTime: '2021-03-24 08:00 AM', endTime: '2021-03-24 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-25', endDate: '2021-03-25', startTime: '2021-03-25 08:00 AM', endTime: '2021-03-25 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-26', endDate: '2021-03-26', startTime: '2021-03-26 08:00 AM', endTime: '2021-03-26 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-27', endDate: '2021-03-27', startTime: '2021-03-27 08:00 AM', endTime: '2021-03-27 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-28', endDate: '2021-03-28', startTime: '2021-03-28 08:00 AM', endTime: '2021-03-28 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-29', endDate: '2021-03-29', startTime: '2021-03-29 08:00 AM', endTime: '2021-03-29 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-30', endDate: '2021-03-30', startTime: '2021-03-30 08:00 AM', endTime: '2021-03-30 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
-DoctorCalendar.create! startDate: '2021-03-31', endDate: '2021-03-31', startTime: '2021-03-31 08:00 AM', endTime: '2021-03-31 16:00 PM', totalHours: 8, user_id: userDoctor5.id, shiftinterval: 15
+(4..6).each do |month|
+  if  month <10 
+    if month == 2
+      (1..28).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor5.id, shiftinterval: 30
+      end
+    else
+      (1..30).each do |day|
+        DoctorCalendar.create! startDate: "2021-0#{month}-#{day}", endDate: "2021-0#{month}-#{day}", startTime: "2021-0#{month}-#{day} 08:00 AM", endTime: "2021-0#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor5.id, shiftinterval: 30
+      end
+    end
+  else 
+    (1..30).each do |day|
+      DoctorCalendar.create! startDate: "2021-#{month}-#{day}", endDate: "2021-#{month}-#{day}", startTime: "2021-#{month}-#{day} 08:00 AM", endTime: "2021-#{month}-#{day} 16:00 PM", totalHours: 8, user_id: userDoctor5.id, shiftinterval: 30
+    end
+  end  
+end
 
 
 # DoctorUsers = User.where(:role_id => role2.id).all
